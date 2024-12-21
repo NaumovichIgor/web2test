@@ -1,0 +1,78 @@
+/* Base styles for mobile devices */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#header, #footer, .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#header {
+    background-color: #f8f8f8;
+    padding: 10px;
+    align-items: center;
+}
+
+#nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav li {
+    margin: 5px 0;
+}
+
+#nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+#table {
+    order: -1; /* Move the table above the links on mobile */
+}
+
+form {
+    margin-top: 20px;
+}
+
+/* Media query for tablets and desktops */
+@media (min-width: 768px) {
+    #header, #footer, .content {
+        flex-direction: row;
+    }
+
+    #header {
+        justify-content: space-between;
+    }
+
+    #nav {
+        flex: 1;
+    }
+
+    #nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #nav li {
+        margin: 0 10px;
+    }
+
+    .content {
+        flex-direction: column;
+        flex: 3;
+    }
+
+    #table {
+        order: 0; /* Reset order for larger screens */
+    }
+}
