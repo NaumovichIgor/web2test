@@ -1,0 +1,178 @@
+<!DOCTYPE html><html>
+<head>
+  <meta charset="UTF-8">
+  <title>Мой сайт</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header id="header">
+  <div class="logo"><img src="image1.png" alt="Логотип"></div>
+  <div class="site-name">Название сайта</div>
+  <nav id="nav">
+    <ul>
+      <li><a href="#">Ссылка меню 1</a></li>
+      <li><a href="#">Ссылка 2</a></li>
+      <li><a href="#">Ссылка 3</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="content">
+<ul>
+  <li><a href="http://kubsu.ru/">абсолютная гиперссылка на главную страницу кубгу</a></li>
+  <li><a href="https://www.kubsu.ru/">абсолютная ссылка на главную сайта kubsu.ru в протоколе https</a></li>
+  <li><a href="http://kubsu.ru/"><img src="image.jpg" alt="здесь должна быть фотография" style="width: 600px;"></a></li>
+  <li><a href="/internal-page">сокращенная ссылка на внутреннюю страницу</a></li>
+  <li><a href="/web1">сокращенная сылка на главную страницу</a></li>
+  <li><a href="#fragment-id">ссылка на фрагмет текущей страницы</a></li>
+  <li><a href="https://example.com/page?param1=value1&param2=value2&param3=value3">ссылка с тремя параметрами URL</a></li>
+  <li><a href="https://example.com/page?id=123">ссылка с параметром id в URL</a></li>
+  <li><a href="current-page.html">относительная ссылка на страницу в текущем</a></li>
+  <li><a href="about/about-page.html">относительная ссылка на страницу в каталоге about</a></li>
+  <li><a href="../parent-page.html">относительная ссылка на страницу в каталоге уровнем выше предыдущего</a></li>
+  <li><a href="../../two-levels-above.html">относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+  <li><p>Это абзац текста содержащий <a href="https://kubsu.ru">ссылку на страницу</a> в себе.</p></li>
+  <li><a href="https://kubsu.ru#main-content">ссылка на фрагмент страницы стороннего сайта</a></li>
+  <li>
+    <map name="image-map">
+      <area shape="rect" coords="34,44,270,350" href="https://example.com/rect" alt="Rectangular Area">
+      <area shape="circle" coords="37,60,44" href="https://example.com/circle" alt="Circular Area">
+      <img src="image.jpg" alt="Image Map" style="width: 600px"; usemap="#image-map">
+    </map>
+  </li>
+  <li><a href="#">Ссылка с пустым href</a></li>
+  <li><a>Ссылка без href</a></li>
+  <li><a href="https://kubsu.ru/ru/sveden">КубГу</a></li>
+  <li><a href="https://kubsu.ru" rel="noindex">ссылка по которой запрещено переходить поисковикам</a></li>
+  <li><a href="https://kubsu.ru/" rel="nofollow">ссылка запрещенная для индексации поисковиками</a></li>
+  <li>
+    <ol>
+      <li><a href="https://kubsu.ru/" title="Ссылка на главную страницу Кубгу">Ссылка на главную страницу Кубгу</a></li>
+      <li><a href="https://infoneeds.kubsu.ru/" title="Информационные потребности">Информационные потребности</a></li>
+    </ol>
+  </li>
+
+</ul>
+  <section id="table">
+    <table>
+      <thead>
+      <tr>
+        <th colspan="4">Заголовок таблицы</th>
+      </tr>
+      <tr>
+        <th>Колонка 1</th>
+        <th>Колонка 2</th>
+        <th>Колонка 3</th>
+        <th>Колонка 4</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr class="odd">
+        <td colspan="2">Ячейка 1 объединенная с 2</td>
+        <td>Ячейка 3</td>
+        <td>Ячейка 4</td>
+      </tr>
+      <tr class="even">
+        <td>Ячейка 5</td>
+        <td>Ячейка 6</td>
+        <td>Ячейка 7</td>
+        <td>Ячейка 8</td>
+      </tr>
+      <tr class="odd">
+        <td>Ячейка 9</td>
+        <td>Ячейка 10</td>
+        <td>Ячейка 11</td>
+        <td>Ячейка 12</td>
+      </tr>
+      <tr class="even">
+        <td>Ячейка 13</td>
+        <td>Ячейка 14</td>
+        <td colspan="2">Ячейка 15 объединенная с 16</td>
+      </tr>
+      <tr class="odd">
+        <td>Ячейка 17</td>
+        <td>Ячейка 18</td>
+        <td>Ячейка 19</td>
+        <td>Ячейка 20</td>
+      </tr>
+      <tr class="even">
+        <td>Ячейка 21</td>
+        <td>Ячейка 22</td>
+        <td>Ячейка 23</td>
+        <td>Ячейка 24</td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
+<form action="/" method="POST">
+
+  <label>
+    ФИО:<br>
+    <input name="field-name-1" value="Ваше ФИО">
+  </label><br>
+
+  <label>
+    Номер телефона:<br>
+    <input name="field-name-2" value="Ваш номер телефона">
+  </label><br>
+
+  <label>
+    email:<br>
+    <input name="field-email" type="email" placeholder="Ваша почта">
+  </label><br>
+
+  <label>
+    Ваша дата рождения:<br>
+    <input name="field-date" value="2005-01-01" type="date">
+  </label><br>
+
+  Пол:<br>
+  <label>
+    <input type="radio" name="radio-group-1" value="Значение1">
+    Муж.
+  </label>
+  <label>
+    <input type="radio" name="radio-group-1" value="Значение2">
+    Жен.
+  </label><br>
+
+  <label>
+    Ваш любимый язык программирования:
+    <br>
+    <select name="field-name-3[]" multiple="multiple">
+      <option value="Метка1" selected="selected">Pascal</option>
+      <option value="Метка2">C</option>
+      <option value="Метка3">C++</option>
+      <option value="Метка1">JavaScript</option>
+      <option value="Метка1">PHP</option>
+      <option value="Метка1">Python</option>
+      <option value="Метка1">Java</option>
+      <option value="Метка1">Haskel</option>
+      <option value="Метка1">Clojure</option>
+      <option value="Метка1">Prolog</option>
+      <option value="Метка1">Scala</option>
+    </select>
+  </label><br>
+
+  <label>
+    Ваша биография:<br>
+    <textarea name="field-name-4">Напишите про себя :)</textarea>
+  </label><br>
+
+  С контрактом ознакомлен:<br>
+  <label>
+    <input type="checkbox" checked="checked" name="check-1">
+  </label><br>
+
+  <input type="submit" value="Отправить">
+</form>
+</main>
+<section id="fragment-id">
+  <h2>Это часть на которую ведет ссылка</h2>
+</section>
+<footer id="footer">
+  <div class="wrapper">
+    <p>(с)Наумович Игорь</p>
+  </div>
+</footer>
+</body>
+</html>
