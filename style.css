@@ -76,3 +76,78 @@ form {
         order: 0; /* Reset order for larger screens */
     }
 }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-color: #61f274;
+    color: white;
+    width: 100%;
+    display: flex;
+}
+
+#header .logo {
+    margin-right: 20px;
+}
+
+#header .site-name {
+    font-size: 24px;
+}
+
+#nav {
+    margin-left: auto;
+}
+
+#nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+#nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.content {
+    background-color: #61f274;
+    padding: 20px 0;
+    max-width: 960px;
+    margin-left: 40px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#table{
+    width: 50%;
+    margin: 20px auto;
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.even {
+    background-color: #f9f9f9;
+}
+
+.odd {
+    background-color: #ffffff;
+}
+
+#footer {
+    background-color: #61f274;
+    color: white;
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+}
